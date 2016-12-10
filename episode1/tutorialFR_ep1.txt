@@ -1,0 +1,18 @@
+Episode 1 : le réseau minimal
+------------------------------
+
+Dans cet épisode, nous allons coder le réseau le plus simple possible : un réseau à deux entrées et une sortie, sans couche cachée, puis le tester sur les cas classiques d'apprentissage de fonction logique : ET, OU, etc.
+
+------------------------------
+Coder le réseau
+
+
+
+------------------------------
+Obtenir des données
+
+C'est ici que réside un des points fondamentaux dans l'utilisation des algorithmes d'apprentissage en général et des réseaux de neurones en particulier : les données.
+En effet, tout l'intérêt de ces approches est de ne pas déterminer le comportement du réseau lors de sa programmmation, mais lors de son utilisation dans un système. Dans notre cas, comme nous restons dans une approche virtuelle, il faut pouvoir fournir à notre algorithme des données à partir desquelles il puisse apprendre. Mais attention, on ne peut pas donner n'importe quoi ! Si les données sont complétement aléatoires, le réseau ne va rien apprendre d'intéressant !
+On va donc s'intéresser dans un premier temps à faire apprendre à notre réseau des fonctions logiques classiques : ET, OU, etc. Il faut donc des données qui correspondent à ces fonctions que l'on puisse donner à notre réseau. Dans notre cas, on va créer un petit script à côté de notre code principal qui va générer des fichiers de données.
+
+Les données de sortie étant binaires, le problème d'apprendre les fonctions logiques est un problème de catégorisation : à chaque entrée (x1,x2), on veut associer une catégorie de sortie 0 ou 1. On s'intéressera à un problème de régresion linéaire dans la suite.
